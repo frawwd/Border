@@ -1,6 +1,7 @@
 :root {
-  --g2: rgb(173, 145, 255);
-  --g1: rgb(255, 71, 71);
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
 }
 @keyframes background-pan {
   from {
@@ -16,11 +17,10 @@ body {
   animation: background-pan 10s linear infinite;
   background: linear-gradient(
     to right,
-    var(--g1),
-    var(--g2),
-    var(--g1),
-    var(--g2),
-    var(--g1)
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
   );
   background-size: 200%;
   height: 100vh;
