@@ -27,9 +27,6 @@ body {
   overflow: hidden;
   margin: 0px;
 }
-body.toggled > #tiles > .tile:hover {
-  opacity: 0.1 !important;
-}
 
 .centered {
   left: 50%;
