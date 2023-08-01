@@ -44,9 +44,10 @@ body {
   
   display: grid;
 }
-.tile:before {
+.tile {
   background-color: rgb(15, 15, 15);
   content: "";
   inset: 1px;
   position: absolute;
 }
+
