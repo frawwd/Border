@@ -1,7 +1,7 @@
 :root {
-  --purple: rgb(123, 31, 162);
-  --violet: rgb(103, 58, 183);
-  --pink: rgb(244, 143, 177);
+  --g2: rgb(173, 145, 255);
+  --g1: rgb(255, 71, 71);
+  --g3: rgb(71, 145, 255);
 }
 @keyframes background-pan {
   from {
@@ -17,10 +17,11 @@ body {
   animation: background-pan 10s linear infinite;
   background: linear-gradient(
     to right,
-    var(--purple),
-    var(--violet),
-    var(--pink),
-    var(--purple)
+    var(--g1),
+    var(--g2),
+    var(--g3),
+    var(--g2),
+    var(--g1)
   );
   background-size: 200%;
   height: 100vh;
@@ -28,26 +29,20 @@ body {
   margin: 0px;
 }
 
-.centered {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-#tiles {
-  height: calc(100vh - 1px);
-  width: calc(100vw - 1px);
-  position: relative;
+h1 {
+  color: white;
+  font-size: clamp(2em, 2vw, 4em);
+  font-weight: 400;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
   z-index: 2;
-  
-  display: grid;
 }
-.tile {
+
+.square {
   background-color: rgb(15, 15, 15);
-  content: "";
   inset: 1px;
   position: absolute;
-}
+  z-index: 1;
 
+}
